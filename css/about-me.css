@@ -1,0 +1,45 @@
+.about-me-title{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 34px;
+  font-weight: normal;
+}
+.about-me-paragraph{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+.about-me-button{
+  font-size: 18px;
+  color: #000;
+  background-color: rgba(251,201,0,.6);
+  -webkit-transition: background-color .3s ease-out;
+  -moz-transition: background-color .3s ease-out;
+  -o-transition: background-color .3s ease-out;
+  transition: background-color .3s ease-out;
+  font-family: 'Roboto', sans-serif;
+}
+.about-me-button:hover, .about-me-button:active{
+  color:#000;
+  text-decoration:none;
+  background-color: #FCC900;
+}
+.about-me-button span{
+  position: relative;
+  top: -11px;
+}
+.about-me-button span img{
+  margin-left:30px;
+}
+.about-me-image{
+  background-image: url("../img/camila-astorga.gif"); /* visible hasta 1200px (ancho max img 570px, ancho min 570px) 800px de alto aprox*/
+  background-size: cover;
+  background-position: center center;
+}
+@media(max-width:575px){
+  .about-me-title{
+    font-size: 24px;
+  }
+  .about-me-paragraph{
+    font-size: 16px;
+  }
+}
