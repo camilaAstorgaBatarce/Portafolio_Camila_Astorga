@@ -7,6 +7,13 @@
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: normal;
+  color: #8f8f8f;
+}
+.about-me-paragraph-second-text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #222;
 }
 .about-me-button{
   font-size: 18px;
