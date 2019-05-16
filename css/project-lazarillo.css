@@ -5,8 +5,8 @@ header{
   font-family: 'Open Sans', sans-serif;
   background-color: #C4C4C4;
 }
-.bg-wenteruka{
-  background: url(../img/projects/wenteruka/foto_superior.jpg);
+.bg-lazarillo{
+  background: url(../img/projects/lazarillo/foto_fondo_lazarillo.jpg);
   background-size: cover;
   background-position: center;
 }
