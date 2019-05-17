@@ -25,16 +25,40 @@ main{
 }
 .project-subtitle{
   display:inline-block;
-  background-color: rgba(252,201,0, .6);
+  /*background-color: rgba(252,201,0, .6);
   line-height: .6;
   padding-right: 30px;
-  margin-top:15px;
+  margin-top:15px;*/
 }
-.project-subtitle span{
+.project-subtitle span:nth-child(1){
   font-weight: 700;
   font-size: 28px;
-  position:relative;
-  top:-12px;
+  /*position:relative;
+  top:-12px;*/
+  border-bottom: 4px solid #fddf66;
+  padding-right: 15px;
+}
+.project-subtitle span:nth-child(2), .project-subtitle span:nth-child(3), .project-subtitle span:nth-child(4){
+  font-weight: 700;
+  font-size: 28px;
+  margin-left: 5px;
+  border-bottom: 4px solid #fddf66;
+}
+.project-subtitle-item{
+  display: inline-block;
+}
+.project-subtitle-item span:nth-child(1){
+  background-color: #fddf66;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  margin-right: 5px;
+}
+.project-subtitle-item span:nth-child(2){
+  font-size: 22px;
+  font-weight: 700;
 }
 .project-text{
   font-family: 'Roboto', sans-serif;
@@ -69,7 +93,13 @@ main{
     font-size: 18px;
   }
   .project-subtitle span {
-    font-size: 26px;
+    font-size: 26px !important;
+  }
+  .project-subtitle-item span {
+    font-size: 21px !important;
+  }
+  .project-subtitle-item span:nth-child(1) {
+    top:8px;
   }
   .project-text-title {
     font-size: 26px;
@@ -86,7 +116,13 @@ main{
     font-size: 16px;
   }
   .project-subtitle span {
-    font-size: 24px;
+    font-size: 24px !important;
+  }
+  .project-subtitle-item span {
+    font-size: 20px !important;
+  }
+  .project-subtitle-item span:nth-child(1) {
+    top:6px;
   }
   .project-text-title {
     font-size: 24px;
@@ -108,7 +144,11 @@ main{
     font-size: 18px;
   }
   .project-subtitle span {
-    font-size: 22px;
+    font-size: 22px !important;
+    line-height: 1.5;
+  }
+  .project-subtitle-item span {
+    font-size: 18px !important;
   }
   .project-text-title {
     font-size: 22px;
@@ -130,7 +170,7 @@ main{
     font-size: 16px;
   }
   .project-subtitle span {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   .project-text-title {
     font-size: 20px;

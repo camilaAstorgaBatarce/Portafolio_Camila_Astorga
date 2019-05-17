@@ -1,10 +1,21 @@
 /* Nav bar */
 .nav-color{
-  background: #F5F5F5;
+  background: #f1f0f0;
 }
 .navbar{
   padding-top:0;
   padding-bottom:0;
+}
+.navbar-light .navbar-brand {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.abbr-name{
+    border-bottom: 2px solid #fddf66;
+    line-height: 1;
+    display: inline-block;
 }
 .nav-link{
   font-family: 'Roboto', sans-serif;
