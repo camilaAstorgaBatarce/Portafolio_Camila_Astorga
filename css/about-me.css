@@ -18,7 +18,7 @@
 .about-me-button{
   font-size: 18px;
   color: #000;
-  background-color: rgba(251,201,0,.6);
+  background-color: rgba(129, 76, 189, 0.7);
   -webkit-transition: background-color .3s ease-out;
   -moz-transition: background-color .3s ease-out;
   -o-transition: background-color .3s ease-out;
@@ -28,7 +28,7 @@
 .about-me-button:hover, .about-me-button:active{
   color:#000;
   text-decoration:none;
-  background-color: #FCC900;
+  background-color: rgba(129, 76, 189, 0.5);
 }
 .about-me-button span{
   position: relative;

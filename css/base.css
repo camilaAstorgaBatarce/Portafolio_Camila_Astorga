@@ -13,7 +13,7 @@
     letter-spacing: 2px;
 }
 .abbr-name{
-    border-bottom: 2px solid #fddf66;
+    border-bottom: 2px solid #814CBD;
     line-height: 1;
     display: inline-block;
 }
@@ -27,7 +27,7 @@
   border-bottom: 0.15rem solid transparent;
 }
 .nav-link:hover,.nav-item.active .nav-link {
-  border-color: #FCC900;
+  border-color: #814CBD;
 }
 .navbar-light .navbar-toggler{
   border:0;
@@ -46,24 +46,74 @@
 
 /*footer*/
 footer{
-  background-color:#E5E5E5;
+  background-color:#A382C9;
 }
 footer .footer-title{
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  font-size: 22px;
-  color:#000;
+  font-size: 28px;
+  color:#fff;
 }
-footer .github img.hover{
+footer .footer-links > div{
+  display: flex;
+  justify-content: center;
+}
+footer .footer-links a{
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-links a img{
+  margin-right: 6px;
+}
+footer .footer-links a span{
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #381362;
+}
+footer .footer-links a:hover span {
+  text-decoration: underline;
+}
+footer .footer-links .middle-separator{
+  /*border-left: 2px solid #fff;
+  border-right: 2px solid #fff;*/
+  position:relative;
+}
+footer .footer-links .middle-separator::before{
+  position: absolute;
+  content: " ";
+  left: 0;
+  top: 5px;
+  width: 2px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+footer .footer-links .middle-separator::after{
+  position: absolute;
+  content: " ";
+  right: 0;
+  top: 5px;
+  width: 2px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+footer .email img.hover{
   display:none;
 }
-footer .github:hover{
+footer .email:hover{
   text-decoration: none;
 }
-footer .github:hover img{
+footer .email:hover img{
   display:none;
 }
-footer .github:hover img.hover{
+footer .email:hover img.hover{
   display:inline-block;
 }
 footer .linkedin img.hover{
@@ -78,22 +128,50 @@ footer .linkedin:hover img{
 footer .linkedin:hover img.hover{
   display:inline-block;
 }
-footer .footer-mail{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  color:#000;
+footer .phone img.hover{
+  display:none;
 }
-footer .footer-mail a{
-  font-weight: normal;
-  color:#000;
+footer .phone:hover{
+  text-decoration: none;
 }
-footer .footer-mail a:hover, footer .footer-mail a:active{
-  text-decoration:none;
-  color:#000;
+footer .phone:hover img{
+  display:none;
+}
+footer .phone:hover img.hover{
+  display:inline-block;
+}
+@media(max-width:1200px){
+  footer .footer-title{
+    font-size: 24px;
+  }
+  footer .footer-links a img{
+    width: 28px;
+  }
+  footer .footer-links a span {
+    font-size: 16px;
+  }
+  footer .footer-links .middle-separator::before{
+    top: 3px;
+    height: 20px;
+  }
+  footer .footer-links .middle-separator::after{
+    top: 3px;
+    height: 20px;
+  }
+}
+@media(max-width:991px){
+  footer .footer-title{
+    font-size: 22px;
+  }
+  footer .footer-links .middle-separator::before{
+    display: none;
+  }
+  footer .footer-links .middle-separator::after{
+    display: none;
+  }
 }
 @media(max-width:575px){
-  footer .footer-mail{
-      font-size: 16px;
+  footer .footer-title{
+    font-size: 18px;
   }
 }
