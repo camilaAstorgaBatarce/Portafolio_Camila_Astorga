@@ -1,46 +1,56 @@
 .fond-color{
   background-color: rgba(244, 244, 244, 0.5);
 }
-.profile-picture{
-  background-image: url(../img/port1.png);
-  background-size: cover;
-  background-position: center bottom;
-  height: 280px;
+
+header h5 {
+  font-size: 20px;
+  color: #814CBD;
+  font-weight: 700;
 }
-.photo-profile{
-  border-radius: 50%;
-  border: 3px solid #FFFFFF;
-  overflow: hidden;
-  left:0;
-  right:0;
-  top:15%;
-  max-width: 13%;
-  min-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+header h1 {
+  font-size: 64px;
+  color: #232323;
+  font-weight: 700;
+}
+header p {
+  font-size: 24px;
+  color: #828282;
 }
 
-.title-name, .description-name{
-font-family:'Open Sans', sans-serif;
+@media(max-width:1200px){
+  header h1 {
+    font-size: 44px;
+  }
+  header p {
+    font-size: 20px;
+  }
 }
-
-.title-name{
-font-size: 36px;
-text-align: center;
+@media(max-width:992px){
+  header h1 {
+    font-size: 40px;
+  }
+  header p, header h5 {
+    font-size: 18px;
+  }
 }
-
-.description-name{
-font-size: 24px;
-text-align: center;
+@media(max-width:769px){
+  header img {
+    width: 400px;
+  }
 }
 @media(max-width:575px){
-  .title-name{
-    font-size: 28px;
+  header h1 {
+    font-size: 30px;
   }
-  .description-name{
-    font-size:18px;
+  header p, header h5 {
+    font-size: 16px;
+  }
+  header img {
+    width: 300px;
   }
 }
+
+
 /* Main */
 .title{
   font-family: 'Open Sans', sans-serif;
@@ -85,8 +95,7 @@ text-align: center;
   box-shadow: 3px 3px 8px -3px rgba(0,0,0,0.25);
 }
 .project-title{
-  font-weight:bold;
-  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
   font-size:22px;
 }
 .project-description{
@@ -94,10 +103,12 @@ text-align: center;
 }
 .project-date{
   font-size:22px;
+  letter-spacing: 0.1em;
 }
 .project-button{
   font-size: 18px;
   color: #000;
+  letter-spacing: 0.1em;
   background-color: rgba(129, 76, 189, 0.7);
   -webkit-transition: background-color .3s ease-out;
   -moz-transition: background-color .3s ease-out;
