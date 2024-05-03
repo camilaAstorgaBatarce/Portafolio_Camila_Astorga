@@ -74,6 +74,14 @@ p, span, li, a {
   }
 }
 
+/*projects*/
+.shadow-bordered-image {
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 3px 8px -3px rgba(0,0,0,0.25);
+  -moz-box-shadow: 3px 3px 8px -3px rgba(0,0,0,0.25);
+  box-shadow: 3px 3px 8px -3px rgba(0,0,0,0.25);
+}
+
 /*footer*/
 footer{
   background-color:#A382C9;
